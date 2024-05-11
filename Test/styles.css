@@ -1,0 +1,88 @@
+body {
+    background-color: #15004e; /* Fondo oscuro para toda la página */
+    color: white; /* Texto blanco para contraste */
+
+}
+.marca {
+    color: #ff009d;
+}
+footer {
+    color: black;
+}
+
+.navbar {
+    background-color: #15004e; /* Mantener el mismo color que el fondo */
+}
+
+.social-logo img {
+    max-width: 30px; /* Ajustar el tamaño máximo de los logos */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    
+}
+
+.footer-line {
+    border-top: 20px solid #ff009d; /* Línea decorativa rosada */
+    margin-top: 20px; /* Margen superior para separar la línea del contenido anterior */
+}
+
+.navbar-brand {
+    color: white; /* Color blanco para el logo */
+}
+
+.navbar-nav a {
+    color: white; /* Color blanco para el texto del menú */
+}
+
+.nav-link:hover, .dropdown-item:hover {
+    background-color: #28145e; /* Efecto hover para el menú */
+}
+
+.card{
+    position: relative;
+}
+
+.dropdown-menu{
+    background-color: #15004e;
+}
+
+.card-tittle{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 0 10px; 
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .card {
+    margin: 5px; /* Espacio entre tarjetas */
+}
+
+.card-img-top {
+    height: 300px; 
+    object-fit: cover; /* Ajustar imagen a la tarjeta */
+}
+
+.scrolling-logos {
+    white-space: nowrap; /* Para mantener imágenes en una línea */
+    animation: scroll-left 15s linear infinite; /* Animación para mover logos */
+}
+
+.scrolling-logos img {
+    height: 50px; /* Tamaño de los logos */
+    margin-right: 20px; /* Espacio entre logos */
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
