@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Estilo CSS separado -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Asegúrate de tener color oscuro y texto blanco -->
+        <a class="navbar-brand" href="#">
+            <img src="multimedia/logo.svg" alt="Logo" class="d-inline-block align-top" height="40" /> <!-- Usar archivo local -->
+        </a>
+        <!-- Botón para menú colapsable -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menú colapsable -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HUB</a>
+                </li>
+                <li class="nav-item dropdown"> <!-- Menú desplegable -->
+                    <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SERVICIOS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="serviciosDropdown">
+                        <a class="dropdown-item" href="#">Desarrollo de E-commerce y websites informativos</a>
+                        <a class="dropdown-item" href="#">Desarrollo de Software a la medida y automatización</a>
+                        <a class="dropdown-item" href="#">Subcontratación de Software</a>
+                        <a class="dropdown-item" href="#">Estrategia de Marketing orientadas al crecimiento</a>
+                        <a class="dropdown-item" href="#">Diseño Estratégico de marca</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTO</a>
+                </li>
+                <li class="nav-item dropdown"> <!-- Menú desplegable -->
+                    <a class="nav-link dropdown-toggle" href="#" id="idiomaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        IDIOMA
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="idiomaDropdown">
+                        <a class="dropdown-item" href="#">Español</a>
+                        <a class="dropdown-item" href="#">Inglés</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal centrado -->
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center" style="height: 100vh;">
+        <h1 style="font-size: 55;">ESCALA EL POTENCIAL</h1>
+        <h1>    DE TU EMPRESA</h1>
+        <h5>CONOCE EL PODER DE PANTHERA</h5>
+    </div>
+
+     <!-- Sección de tarjetas -->
+     <div class="container mt-5">
+        <div class="row"> <!-- Cinco columnas para cinco tarjetas -->
+            <div class="col-md-1 col-lg-3 text-center"> <!-- Cambio de tamaño según pantalla -->
+                <div class="card" style="width: 200px;"> <!-- Tarjeta con imagen de fondo -->
+                    <img src="multimedia/eccomerce.jpg" class="card-img-top" alt="Card imagen">
+                    <div class="card-img-overlay" >
+                        <h5 class="card-title">Desarrollo de E-commerce y websites informativos</h5>
+                        <a href="#" class="btn btn-outline-primary card-btn">Ver más</a> <!-- Botón para acción -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 text-center">
+                <div class="card" style="width: 200px;">
+                    <img src="multimedia/DesarrolloSoftware.jpg" class="card-img-top" alt="Card imagen">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Desarrollo de Software a la medida y automatización</h5>
+                        <a href="#" class="btn btn-outline-primary card-btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 text-center">
+                <div class="card" style="width: 200px;">
+                    <img src="multimedia/SubSoftware.jpg" class="card-img-top" alt="Card imagen">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Subcontratación de Software</h5>
+                        <a href="#" class="btn btn-outline-primary card-btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 text-center">
+                <div class="card" style="width: 200px;">
+                    <img src="multimedia/DiseñoMarca.jpg" class="card-img-top" alt="Card imagen">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Diseño Estratégico de marca</h5>
+                        <a href="#" class="btn btn-outline-primary card-btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 text-center">
+                <div class="card" style="width: 200px;">
+                    <img src="multimedia/Marketing.jpg" class="card-img-top" alt="Card imagen">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Estrategia de Marketing orientadas al crecimiento</h5>
+                        <a href="#" class="btn btn-outline-primary card-btn">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de carrusel de logos -->
+    <div class="container mt-5 overflow-hidden"> <!-- Overflow-hidden para contener el carrusel -->
+        <div class="scrolling-logos"> <!-- Contenedor con animación -->
+            <img src="multimedia/efipay.jpg" alt="efipay" />
+            <img src="multimedia/uala.png" alt="uala" />
+            <img src="multimedia/levely.png" alt="levely" />
+            <img src="multimedia/klipclub.png" alt="klipclub" />
+            <img src="multimedia/accedo.png" alt="accedo" />
+            <img src="multimedia/alltruismo.png" alt="alltruismo" />
+            <img src="multimedia/ya-te-ayudo.png" alt="ya-te-ayudo" />
+            <img src="multimedia/ingles-de-una.png" alt="ingles-de-una" />
+            <img src="multimedia/tutrok.png" alt="tutrok" />
+            <img src="multimedia/atg.png" alt="atg" />
+            <img src="multimedia/cfs.png" alt="cfs" />
+        </div>
+    </div>
+
+     <!-- Sección de video a todo ancho -->
+     <div class="container-fluid p-0 mt-5"> <!-- Contenedor sin padding -->
+        <video autoplay loop muted width="100%" height="auto"> <!-- Autoplay, loop y muted para reproducción constante -->
+            <source src="multimedia/home-desktop.mp4" type="video/mp4" /> <!-- Ruta de tu video -->
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </div>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center" style="height: 100vh;">
+        <h1 style="font-size: 55;">CONECTAMOS CONTIGO</h1>
+        <h1>Y TUS CLIENTES</h1>
+        <h5>NO SERÁS SOLO OTRO NÚMERO; ANALIZAREMOS TU NEGOCIO PARA OFRECERTE UNA
+        SOLUCIÓN PERSONALIZADA Y LLEVARTE HACIA EL ÉXITO</h5>
+    </div>
+
+    <!-- Carrusel de pasos -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> <!-- Uso de Bootstrap para el carrusel -->
+        <ol class="carousel-indicators"> <!-- Indicadores para navegar -->
+            <!-- Crear un indicador por paso -->
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+        </ol>
+        <div class="carousel-inner"> <!-- Contenedor para las diapositivas -->
+            <!-- Carrusel con imagen a la izquierda y texto a la derecha -->
+            <div class="carousel-item active"> 
+                <div class="row d-flex justify-content-center align-items-center"> <!-- Dividir el carrusel en dos partes -->
+                    <div class="col-md-5 text-center"> <!-- Columna para la imagen -->
+                        <img src="multimedia/uala-tel.png" alt="Paso 1" class="img-fluid" style="height: 300px; object-fit: cover;" />
+                    </div>
+                    <div class="col-md-5 text-center d-flex flex-column justify-content-center"> <!-- Columna para el texto y botón -->
+                        <h3>Ualá</h3>
+                        <p>Compañía de tecnología que ofrece un ecosistema de soluciones financieras.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a> <!-- Botón de acción -->
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> 
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="multimedia/levely-tel.png" alt="Paso 2" class="img-fluid" style="height: 300px; object-fit: cover;" />
+                    </div>
+                    <div class="col-md-5 text-center d-flex flex-column justify-content-center">
+                        <h3>Levely</h3>
+                        <p>Un sistema de gestión de aprendizaje que ayuda a crear una amplia gama de curs...</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> 
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="multimedia/klipclub-tel.png" alt="Paso 3" class="img-fluid" style="height: 300px; object-fit: cover;"/>
+                    </div>
+                    <div class="col-md-5 text-center d-flex flex-column justify-content-center">
+                        <h3>Klipclub</h3>
+                        <p>Plataforma de transmisión digital para eventos relacionados con la...</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> 
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="multimedia/accedo-tel.png" alt="Paso 4" class="img-fluid" style="height: 300px; object-fit: cover;"/>
+                    </div>
+                    <div class="col-md-5 text-center d-flex flex-column justify-content-center">
+                        <h3>Accedo</h3>
+                        <p>Es un líder ágil y escalable en nearshore para las necesidades de soporte al cliente.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> 
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="multimedia/alltruismo-tel.png" alt="Paso 5" class="img-fluid" style="height: 300px; object-fit: cover;"/>
+                    </div>
+                    <div class="col-md-5 text-center d-flex flex-column justify-content-center">
+                        <h3>Alltruismo</h3>
+                        <p>Plataforma de crowdfunding para organizaciones sin fines de lucro.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> 
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="multimedia/ya-te-ayudo-tel.png" alt="Paso 6" class="img-fluid" style="height: 300px; object-fit: cover;"/>
+                    </div>
+                    <div class="col-md-5 text-center d-flex flex-column justify-content-center">
+                        <h3>Ya Te Ayudo</h3>
+                        <p>Plataforma de gestión de favores, donde puedes ayudar a los tuyos en Colombia</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> 
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="multimedia/ingles-de-una-tel.png" alt="Paso 7" class="img-fluid" style="height: 300px; object-fit: cover;"/>
+                    </div>
+                    <div class="col-md-5 text-center d-flex flex-column justify-content-center">
+                        <h3>Ingles de Una</h3>
+                        <p>Una aplicación web interactiva para el aprendizaje del inglés, con Moodle y SCOR...</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> 
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="multimedia/tutrok-tel.png" alt="Paso 8" class="img-fluid" style="height: 300px; object-fit: cover;"/>
+                    </div>
+                    <div class="col-md-5 text-center d-flex flex-column justify-content-center">
+                        <h3>Tutrok</h3>
+                        <p>Plataforma digital y aplicación móvil para el transporte de carga pesada</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> 
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="multimedia/efipay-tel.png" alt="Paso 9" class="img-fluid" style="height: 300px; object-fit: cover;"/>
+                    </div>
+                    <div class="col-md-5 text-center d-flex flex-column justify-content-center">
+                        <h3>Efipay</h3>
+                        <p>Es una solución innovadora diseñada para simplificar y agilizar los pagos en...</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Controles para navegar por el carrusel -->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+    <div class="container mt-5">
+        <div class="row"> <!-- Usamos Bootstrap para dividir en dos columnas -->
+            <!-- Columna para la imagen grande -->
+            <div class="col-md-6"> 
+                <img src="multimedia/imagen-form.png" alt="Imagen grande" class="img-fluid" style="max-height: 400px; object-fit: cover;" />
+                <h1 style="text-align: center;">TRANSFÓRMATE DIGITALMENTE</h1>
+                <h6 style="text-align: center;">¡Tenemos la solución en un solo lugar y a tu medida!</h6>
+            </div>
+            <!-- Columna para el formulario -->
+            <div class="col-md-6"> 
+                <form> <!-- Comienza el formulario -->
+                    <div class="form-group"> <!-- Grupo para nombre y apellido -->
+                        <input type="text" class="form-control" id="nombre-apellido" placeholder="Nombre y Apellido" required />
+                    </div>
+                    <div class="form-group"> <!-- Grupo para nombre de empresa -->
+                        <input type="text" class="form-control" id="nombre-empresa" placeholder="Nombre de empresa" required />
+                    </div>
+                    <div class="form-group"> <!-- Grupo para correo electrónico -->
+                        <input type="email" class="form-control" id="correo" placeholder="Correo electrónico" required />
+                    </div>
+                    <div class="form-group"> <!-- Grupo para teléfono -->
+                        <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" required />
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="ecommerce" />
+                            <label class="form-check-label" for="ecommerce">Desarrollo de E-commerce y websites informativos</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="software" />
+                            <label class="form-check-label" for="software">Desarrollo de Software a la medida y automatización</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="subcontratacion" />
+                            <label class="form-check-label" for="subcontratacion">Subcontratación de Software</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="estrategico" />
+                            <label class="form-check-label" for="estrategico">Diseño Estratégico de marca</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="marketing" />
+                            <label class="form-check-label" for="marketing">Estrategia de Marketing orientadas al crecimiento.</label>
+                        </div>
+                        <div class="form-check"> <!-- Separamos este checkbox -->
+                            <input type="checkbox" class="form-check-input" id="autorizacion" required />
+                            <label class="form-check-label" for="autorizacion">Al hacer clic aquí, confirmas tu autorización conforme a los términos de uso y política de privacidad.</label>
+                        </div>
+                    </div>
+                    <button type="submit" style="align-content: center;" class="btn btn-danger">trabajemos</button> <!-- Botón para enviar el formulario -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer bg-white"> <!-- Footer con fondo blanco -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-5"> <!-- Columna izquierda -->
+                    <img src="multimedia/logo-red.svg" alt="Logo Footer" class="img-fluid mb-3" style="max-width: 100px;"> <!-- Logo -->
+                    <h5>ESCALA EL POTENCIAL DE TU EMPRESA</h5> <!-- Título -->
+                    <p class="marca">PANTHERA HUB 2024</p> <!-- Líneas de texto -->
+                    <p>Tratamiento de Datos Personales en los términos de la Política de Privacidad y Protección de Datos Personales. Aviso de privacidad y política de cookies</p>
+                    <div class="col-3 social-logo">
+                        <a href="#"><img src="multimedia/linkedin.png" alt="LinkedIn" class="img-fluid"></a>
+                        <a href="#"><img src="multimedia/facebook.png" alt="Facebook" class="img-fluid"></a>
+                        <a href="#"><img src="multimedia/instagram.png" alt="Instagram" class="img-fluid"></a>
+                        <a href="#"><img src="multimedia/youtube.png" alt="YouTube" class="img-fluid"></a>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <hr class="footer-line">
+    </footer>
+    
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
